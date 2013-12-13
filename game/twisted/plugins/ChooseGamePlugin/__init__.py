@@ -1,0 +1,3 @@
+from ServerSide import ChooseGamePlugin
+from ClientSDL import ChooseGamePluginSDL
+from ClientAscii import ChooseGamePluginAscii
