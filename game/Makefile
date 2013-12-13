@@ -23,19 +23,19 @@ sdl: serve
 	./play.py
 	@echo "===> Server still runnning. To stop it you can use the 'stop' target."
 
-deb-deps:
-	apt-get install python-twisted
+server-debs:
+	apt-get install python-twisted python-argparse
 
 client-debs:
 	apt-get install python-pygame python-stdlib
 
-build-deps:
+random-deps:
 	#pygame
 	apt-get install python-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev  libsdl1.2-dev libsmpeg-dev python-numpy subversion libportmidi-dev ffmpeg libswscale-dev libavformat-dev libavcodec-dev
 	pip install pygame Twisted
 	cd /usr/include/linux; ln -s ../libv4l1-videodev.h videodev.h
 
-optional-deps:
+optional-debs:
 	apt-get install tree
 
 tree: clean
