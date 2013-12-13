@@ -1,4 +1,5 @@
 *.py[cod]
+dropin.cache
 
 # C extensions
 *.so
